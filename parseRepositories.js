@@ -160,7 +160,8 @@ angular.module('parse', [])
                                 }
                             });
                         }else{
-                            obj.destroy(null, {
+                            //removed null as parse delete doesn't have this
+                            obj.destroy({
                                 success: function(result) {
                                     defer.resolve();
 
